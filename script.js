@@ -118,7 +118,7 @@ const loco=()=>{
       trigger:`#page1>video`,
       scroller:`#main`,
       start:`2% top`,
-      end:`bottom top`,
+      end:`3% top`,
     },
     onStart:()=>{
       document.querySelector(`#page1>video`).play();
@@ -129,7 +129,7 @@ const loco=()=>{
       trigger:`#page1`,
       scroller:`#main`,
       start:`top top`,
-      end:`bottom top`,
+      end:`60% top`,
       pin:true
     },
   })
@@ -562,4 +562,76 @@ gsap.from(`#page34 img`,{
     scrub:1,
   }
   ,opacity:0
+})
+var t=gsap.timeline({
+  scrollTrigger:{
+    trigger:`#page6`,
+    scroller:`#main`,
+    markers:true,
+    start:`top top`,
+    end:`1% top`,
+    scrub:true
+  }
+})
+t.to(`nav`,{
+  backgroundColor:`#fff`
+})
+t.to(`#nav-bottom>h3`,{
+  color:`#111`
+})
+t.to(`#nav-bottom>button`,{
+  color:`#fff`,
+  backgroundColor:`#111`
+})
+var t1=gsap.timeline({
+  scrollTrigger:{
+    trigger:`#page25`,
+    scroller:`#main`,
+    markers:true,
+    start:`top top`,
+    end:`1% top`,
+    scrub:true
+  }
+})
+t1.to(`nav`,{
+  backgroundColor:`#000`
+})
+t1.to(`#nav-bottom>h3`,{
+  color:`#fff`
+})
+t1.to(`#nav-bottom>button`,{
+  color:`#000`,
+  backgroundColor:`#fff`
+})
+var t2=gsap.timeline({
+  scrollTrigger:{
+    trigger:`#page36`,
+    scroller:`#main`,
+    markers:true,
+    start:`top top`,
+    end:`1% top`,
+    scrub:true
+  }
+})
+t2.to(`nav`,{
+  backgroundColor:`#fff`
+})
+t2.to(`#nav-bottom>h3`,{
+  color:`#111`
+})
+t2.to(`#nav-bottom>button`,{
+  color:`#fff`,
+  backgroundColor:`#111`
+})
+gsap.to(`nav`,{
+  scrollTrigger:{
+    trigger:`nav`,
+    scroller:`#main`,
+    markers:true,
+    start:`1% top`,
+    end:`1% top`,
+    scrub:0.2
+  }
+  ,
+  top:`-6.5vh`
 })

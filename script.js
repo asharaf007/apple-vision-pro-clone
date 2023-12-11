@@ -567,7 +567,6 @@ var t=gsap.timeline({
   scrollTrigger:{
     trigger:`#page6`,
     scroller:`#main`,
-    markers:true,
     start:`top top`,
     end:`1% top`,
     scrub:true
@@ -587,7 +586,6 @@ var t1=gsap.timeline({
   scrollTrigger:{
     trigger:`#page25`,
     scroller:`#main`,
-    markers:true,
     start:`top top`,
     end:`1% top`,
     scrub:true
@@ -607,7 +605,6 @@ var t2=gsap.timeline({
   scrollTrigger:{
     trigger:`#page36`,
     scroller:`#main`,
-    markers:true,
     start:`top top`,
     end:`1% top`,
     scrub:true
@@ -627,7 +624,6 @@ gsap.to(`nav`,{
   scrollTrigger:{
     trigger:`nav`,
     scroller:`#main`,
-    markers:true,
     start:`1% top`,
     end:`1% top`,
     scrub:0.2
